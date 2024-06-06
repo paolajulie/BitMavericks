@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bioflix - Quizzes</title>
+    <style>
+      body {
+        background-image: url("https://example.com/background-image.jpg"); /* Substitua pelo link da imagem de fundo desejada */
+        background-size: cover;
+        font-family: "Sora", sans-serif;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      #categories{
+        margin-top: 20px;
+        position: absolute;
+        right: 6.2%;
+        
+      }
+      .quiz-box{
+        color: white;
+        margin: 2%;
+        margin-top: 5%;
+
+      }
+      .quiz-box img{
+        max-width: 300px;
+      }
+      .quizzes-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-900 overflow-x-hidden">
+     <!-- Header -->
+     <header
+     class="w-screen md:w-full p-4 sticky top-0 flex justify-between items-center z-50 bg-gray-900 bg-opacity-70"
+   >
+     <div class="flex items-center">
+       <a href="./home.html" style="text-decoration: none"
+         ><h1 class="text-3xl font-bold text-red-600 hover:text-red-700 mr-8">
+           BIOFLIX
+         </h1></a
+       >
+       <nav class="flex space-x-4 text-white hidden md:block" id="navbar">
+         <a
+           href="./home.html"
+           class="hover:text-red-500 duration-150 ease-in-out no-underline"
+           style="text-decoration: none"
+           >Início</a
+         >
+         <a
+           href="./quizzes.html"
+           class="hover:text-red-500 duration-150 ease-in-out no-underline"
+           style="text-decoration: none"
+           >Quizzes</a
+         >
+
+         <a
+           href="./forum.html"
+           class="hover:text-red-500 duration-150 ease-in-out no-underline"
+           style="text-decoration: none"
+           >Fórum</a
+         >
+       </nav>
+     </div>
+     <div class="flex items-center space-x-4 text-white">
+       <button
+         id="dropdownIcon"
+         class="hover:text-red-500 duration-150 ease-in-out"
+       >
+         <i class="fas fa-user"></i>
+       </button>
+     </div>
+   </header>
+    <div id="dropdownModal" class="dropdown-modal bg-white hidden">
+      <!-- Inserted with js -->
+    </div>
+
+    
+    <main>
+        <select name="categories" id="categories">
+            <option value="NONE">CATEGORIAS</option>
+            <option value="ADS">ADS</option>
+            <option value="GERAL">GERAL</option>
+            <option value="TEC-ENFER">TECNICO DE ENFERMAGEM</option>
+            <option value="CIEN-DADOS">CIÊNCIA DE DADOS</option>
+            <option value="FARMACIA">FARMÁCIA</option>
+            <option value="ENG-BIOP">ENG.BIOP. E BIOTEC</option>
+        </select>
+
+        <section class="quizzes-list">
+            <a class="quiz-box hover:bg-red-600 " href="/quiz.html">
+                <img src="./img/quizBoxesImages/quizzTeste.jpg" alt="quiz-imagem">
+                <p>Quiz - ADS</p>
+            </a>
+            <a class="quiz-box hover:bg-red-600" href="/quiz.html">
+                <img src="./img/quizBoxesImages/quizzTeste.jpg" alt="quiz-imagem" class="">
+                <p>Quiz - Eng Bio </p>
+            </a>
+            <a class="quiz-box hover:bg-red-600" href="/quiz.html">
+                <img src="./img/quizBoxesImages/quizzTeste.jpg" alt="quiz-imagem">
+                <p>Quiz - TECNICO DE ENFERMAGEM</p>
+            </a>
+            <a class="quiz-box hover:bg-red-600" href="/quiz.html">
+                <img src="./img/quizBoxesImages/quizzTeste.jpg" alt="quiz-imagem">
+                <p>Quiz - CIÊNCIA DE DADOS</p>
+            </a>
+            <a class="quiz-box hover:bg-red-600" href="/quiz.html">
+                <img src="./img/quizBoxesImages/quizzTeste.jpg" alt="quiz-imagem">
+                <p>Quiz - FARMÁCIA</p>
+            </a>
+        </section>
+    </main>
+
+
+    <footer
+    class="w-screen flex flex-col md:flex-row justify-between text-white px-[10%] py-12 items-center "
+  >
+    <div class="w-full flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0">
+      <div class="flex flex-col items-center justify-center w-full">
+        <h1 class="text-red-600 text-5xl font-bold">BIOFLIX</h1>
+        <div class="text-white text-xl pt-4">
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <ul class="text-xl h-full flex flex-col gap-y-5 font-semibold text-center md:text-justify ">
+          <a
+            href="./home.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Início</li></a
+          >
+          <a
+            href="./quizzes.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Quizzes</li></a
+          >
+          <a
+            href="./forum.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Fórum</li></a
+          >
+        </ul>
+      </div>
+    </div>
+    <div class="w-1/2">
+      <ul class="text-lg h-full flex flex-col gap-y-2 mt-8 md:mt-0 text-center md:text-justify">
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Engenharia Bioprocessos e Biotecnologia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Farmácia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Ciência de Dados</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Técnico de Enfermagem</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>ADS</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Geral</li></a
+        >
+      </ul>
+    </div>
+  </footer>
+
+    <script type="module" src="js/quizzes.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bioflix - Minhas aulas</title>
+    <style>
+      .dropdown-modal {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 80px;
+        right: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 1000;
+      }
+
+      .dropdown-modal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      body {
+        background-image: url("https://example.com/background-image.jpg"); /* Substitua pelo link da imagem de fundo desejada */
+        background-size: cover;
+        font-family: "Sora", sans-serif;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100;
+      }
+      header {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7) 10%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+      main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .aulas-list{
+        
+        color: black;
+        
+      }
+      .aulas-list li{
+        background-color: #FBFBFB;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .aulas-presenciais{
+        width: 70%;
+      }
+      .curso img{
+        max-width: 250px;
+      }
+      .section-cursos{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        align-self: baseline;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-900 overflow-x-hidden">
+    <header
+    class="w-full p-4 sticky top-0 flex justify-between items-center z-10 bg-gray-900 bg-opacity-70"
+  >
+    <div class="flex items-center">
+      <a href="./home.html" style="text-decoration: none"
+        ><h1 class="text-3xl font-bold text-red-600 hover:text-red-700 mr-8">
+          BIOFLIX
+        </h1></a
+      >
+      <nav class="flex space-x-4 text-white" id="navbar">
+        <a
+          href="./home.html"
+          class="hover:text-red-500 duration-150 ease-in-out no-underline"
+          style="text-decoration: none"
+          >Início</a
+        >
+        <a
+          href="./quizzes.html"
+          class="hover:text-red-500 duration-150 ease-in-out no-underline"
+          style="text-decoration: none"
+          >Quizzes</a
+        >
+
+        <a
+          href="./forum.html"
+          class="hover:text-red-500 duration-150 ease-in-out no-underline"
+          style="text-decoration: none"
+          >Fórum</a
+        >
+      </nav>
+    </div>
+    <div class="flex items-center space-x-4 text-white">
+      
+      <button
+        id="dropdownIcon"
+        class="hover:text-red-500 duration-150 ease-in-out"
+      >
+        <i class="fas fa-user"></i>
+      </button>
+    </div>
+  </header>
+  <div id="dropdownModal" class="dropdown-modal bg-white hidden">
+    <!-- Inserted with js -->
+  </div>
+
+ 
+    <main>
+        <section class="section-cursos" style="width: 100%;">
+            <h1 style="margin-left: 2%;">MEUS CURSOS</h1>
+            <div class="cursos" style="display: flex; width: 80%; flex-direction: row; gap: 10%; justify-content: center; flex-wrap: wrap; justify-self: center;">
+                <a class="curso" href="manterCurso.html">
+                    <img src="img/bg-ciencia-de-dados.jpg" alt="Ciencia de Dados">
+                </a>
+                <a class="curso" href="manterCurso.html" >
+                    <img src="/img/banners/download1.jpg" alt="Ciencia de Dados">
+                </a>
+                <a class="curso" href="manterCurso.html" >
+                    <img src="/img/banners/images2.jpg" alt="Ciencia de Dados">
+                </a>
+            </div>
+        </section>
+        <section class="aulas-presenciais">
+            <span style="display: flex; flex-direction: row;">
+                <h1 style="flex-grow: 1;">
+                    AULAS PRESENCIAIS
+                </h1>
+                <div style="flex-grow: 5;"></div>
+                <input type="date" style="color: black; flex-grow: 1;">
+            </span>
+            <ul class="aulas-list">
+                <li>
+                    <a href="chamadaAula.html">AULA DE CIÊNCIAS DE DADOS - SALA 801 - 16/06/2023</a>
+                </li>
+                <li>
+                    <a href="">AULA DE CIÊNCIAS DE DADOS - SALA 801 - 15/06/2023</a>
+                </li>
+                <li>
+                    <a href="">AULA DE CIÊNCIAS DE DADOS - SALA 801 - 14/06/2023</a>
+                </li>
+                <li>
+                  <a href="">AULA DE CIÊNCIAS DE DADOS - SALA 801 - 13/06/2023</a>
+                 </li>
+                 <li>
+                  <a href="">AULA DE CIÊNCIAS DE DADOS - SALA 801 - 12/06/2023</a>
+                 </li>
+                  <li>
+                   <a href="">AULA DE CIÊNCIAS DE DADOS - SALA 801 - 11/06/2023</a>
+                 </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer
+    class="w-screen flex flex-col md:flex-row justify-between text-white px-[10%] py-12 items-center"
+  >
+    <div
+      class="w-full flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0"
+    >
+      <div class="flex flex-col items-center justify-center w-full">
+        <h1 class="text-red-600 text-5xl font-bold">BIOFLIX</h1>
+        <div class="text-white text-xl pt-4">
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <ul
+          class="text-xl h-full flex flex-col gap-y-5 font-semibold text-center md:text-justify"
+        >
+          <a
+            href="./home.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Início</li></a
+          >
+          <a
+            href="./quizzes.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Quizzes</li></a
+          >
+          <a
+            href="./forum.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Fórum</li></a
+          >
+        </ul>
+      </div>
+    </div>
+    <div class="w-1/2">
+      <ul
+        class="text-lg h-full flex flex-col gap-y-2 mt-8 md:mt-0 text-center md:text-justify"
+      >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Engenharia Bioprocessos e Biotecnologia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Farmácia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Ciência de Dados</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Técnico de Enfermagem</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>ADS</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Geral</li></a
+        >
+      </ul>
+    </div>
+  </footer>
+    <script type="module" src="js/minhasAulas.js"></script>
+  </body>
+</html>
