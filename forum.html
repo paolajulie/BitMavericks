@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioflix Forum</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+        background-image: url("https://example.com/background-image.jpg"); /* Substitua pelo link da imagem de fundo desejada */
+        background-size: cover;
+        font-family: "Sora", sans-serif;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #243444;
+      }
+        .discussion-card {
+            background-color: #D9D9D9;
+            color: #000000;
+            box-shadow: 0 4px 4px 0 rgba(228, 222, 222, 0.25);;
+        }
+        .sidebar {
+            background-color: #243444;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            width: 260px;
+        }
+        .sidebar a:hover {
+            background-color: #E9B4C4;
+            border-radius: 10px;
+            width: 220px;
+        }
+        .content-wrapper {
+            padding: 20px;
+        }
+        .col-md-3 {
+          max-width: 20%;
+        }
+      .footer{
+       margin-bottom: 1px;
+      }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-900 overflow-x-hidden">
+  <header
+  class="w-screen md:w-full p-4 sticky top-0 flex justify-between items-center z-50 bg-gray-900 bg-opacity-70"
+>
+  <div class="flex items-center">
+    <a href="./home.html" style="text-decoration: none"
+      ><h1 class="text-3xl font-bold text-red-600 hover:text-red-700 mr-8">
+        BIOFLIX
+      </h1></a
+    >
+    <nav class="flex space-x-4 text-white hidden md:block" id="navbar">
+      <a
+        href="./home.html"
+        class="hover:text-red-500 duration-150 ease-in-out no-underline"
+        style="text-decoration: none"
+        >Início</a
+      >
+      <a
+        href="./quizzes.html"
+        class="hover:text-red-500 duration-150 ease-in-out no-underline"
+        style="text-decoration: none"
+        >Quizzes</a
+      >
+
+      <a
+        href="./forum.html"
+        class="hover:text-red-500 duration-150 ease-in-out no-underline"
+        style="text-decoration: none"
+        >Fórum</a
+      >
+    </nav>
+  </div>
+  <div class="flex items-center space-x-4 text-white">
+    <button
+      id="dropdownIcon"
+      class="hover:text-red-500 duration-150 ease-in-out"
+    >
+      <i class="fas fa-user"></i>
+    </button>
+  </div>
+</header>
+<div id="dropdownModal" class="dropdown-modal bg-white hidden">
+  <!-- Inserted with js -->
+</div>
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <button class="btn btn-danger btn-block mb-3">+ Nova Discussão</button>
+                    <a href="#">Todas as Discussões</a>
+                    <a href="#">Em alta na semana</a>
+                    <a href="#">Resolvido</a>
+                    <a href="#">Não resolvido</a>
+                    <a href="#">Sem respostas</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="content-wrapper">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="inner-main-header">
+                            <a class="nav-link nav-icon rounded-circle nav-link-faded mr-3 d-md-none" href="#" data-toggle="inner-sidebar"><i class="material-icons">arrow_forward_ios</i></a>
+                            <select class="custom-select custom-select-sm w-auto mr-1">
+                                <option selected="">Favoritos</option>
+                                <option value="1">Mais recentes</option>
+                                <option value="3">Menos recentes</option>
+                            </select>
+                        </div>
+                        <input type="text" class="form-control w-25" placeholder="Pesquisa">
+                    </div>
+                    <div class="discussion-card p-3 mb-3 rounded">
+                        <div class="d-flex align-items-center">
+                            <a href="#" data-toggle="collapse" data-target=".forum-content"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                            <div class="mr-3">
+                                <i class="fas fa-user-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h6><strong>Duvidas Sobre Suporte</strong></h6>
+                                <p class="mb-0">"Pessoal, alguém já usou o suporte ao aluno da plataforma? Tive um problema técnico e gostaria de saber se o atendimento é rápido e eficiente."</p>
+                                <small class="text-muted">João Silva: publicou a <strong>10 minutos atrás</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discussion-card p-3 mb-3 rounded">
+                        <div class="d-flex align-items-center">
+                            <a href="#" data-toggle="collapse" data-target=".forum-content"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                            <div class="mr-3">
+                                <i class="fas fa-user-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h6><strong>Duvidas</strong></h6>
+                                <p class="mb-0">"Oi gente! Estou pensando em assinar o plano premium da plataforma. Para quem já assinou?"</p>
+                                <small class="text-muted">mafebordignon publicou a <strong>10 minutos atrás</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discussion-card p-3 mb-3 rounded">
+                        <div class="d-flex align-items-center">
+                            <a href="#" data-toggle="collapse" data-target=".forum-content"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                            <div class="mr-3">
+                                <i class="fas fa-user-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h6><strong>Avaliação</strong></h6>
+                                <p class="mb-0">"Queria deixar registrado aqui o quanto estou impressionado com a qualidade dos cursos da plataforma! Os instrutores são muito didáticos e os conteúdos são super atualizados. Parabéns!"</p>
+                                <small class="text-muted">Lucas publicou a <strong>10 minutos atrás</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer
+    class="w-screen flex flex-col md:flex-row justify-between text-white px-[10%] py-12 items-center "
+  >
+    <div class="w-full flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0">
+      <div class="flex flex-col items-center justify-center w-full">
+        <h1 class="text-red-600 text-5xl font-bold">BIOFLIX</h1>
+        <div class="text-white text-xl pt-4">
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <ul class="text-xl h-full flex flex-col gap-y-5 font-semibold text-center md:text-justify ">
+          <a
+            href="./comoFunciona.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Como funciona</li></a
+          >
+          <a
+            href="./quizzes.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Quizzes</li></a
+          >
+          <a
+            href="./forum.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Fórum</li></a
+          >
+        </ul>
+      </div>
+    </div>
+    <div class="w-1/2">
+      <ul class="text-lg h-full flex flex-col gap-y-2 mt-8 md:mt-0 text-center md:text-justify">
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Engenharia Bioprocessos e Biotecnologia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Farmácia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Ciência de Dados</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Técnico de Enfermagem</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>ADS</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Geral</li></a
+        >
+      </ul>
+    </div>
+  </footer>
+
+  <script type="module" src="js/forum.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

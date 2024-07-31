@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bioflix - Gerenciar Cursos</title>
+    <style>
+      body {
+        background-image: url("https://example.com/background-image.jpg"); /* Substitua pelo link da imagem de fundo desejada */
+        background-size: cover;
+        font-family: "Sora", sans-serif;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      header {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7) 10%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+      main{
+        color: #243444;
+      }
+      main section{
+        padding: 10px;
+        background-color: white;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col bg-gray-900 w-screen overflow-x-hidden">
+    <header
+    class="w-full p-4 sticky top-0 flex justify-between items-center z-10 bg-black bg-opacity-70"
+  >
+    <div class="flex items-center">
+      <a href="./home.html" style="text-decoration: none"
+        ><h1 class="text-3xl font-bold text-red-600 hover:text-red-700 mr-8">
+          BIOFLIX
+        </h1></a
+      >
+      <nav class="flex space-x-4 text-white" id="navbar">
+        <a
+          href="./home.html"
+          class="hover:text-red-500 duration-150 ease-in-out no-underline"
+          style="text-decoration: none"
+          >Início</a
+        >
+        <a
+          href="./quizzes.html"
+          class="hover:text-red-500 duration-150 ease-in-out no-underline"
+          style="text-decoration: none"
+          >Quizzes</a
+        >
+        
+        <a
+          href="./forum.html"
+          class="hover:text-red-500 duration-150 ease-in-out no-underline"
+          style="text-decoration: none"
+          >Fórum</a
+        >
+      </nav>
+    </div>
+    <div class="flex items-center space-x-4 text-white">
+      <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+        ><i class="fas fa-search"></i
+      ></a>
+      <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+        ><i class="fas fa-bell"></i
+      ></a>
+      <button
+        id="dropdownIcon"
+        class="hover:text-red-500 duration-150 ease-in-out"
+      >
+        <i class="fas fa-user"></i>
+      </button>
+    </div>
+  </header>
+   
+    <main>
+        <h1 style="color: white; margin: 1%; margin-left: 5%;">
+            CIÊNCIA DE DADOS
+        </h1>
+        <div>
+          <section style="float: left; width: 30%; margin-left: 5%;">
+            <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
+              <h2 style="flex-grow: 1;">AULAS</h2>
+              <button style="background-color: black; color: white; width: 20px;"> + </button>
+            </div>
+            <ul class="lista-aulas">
+                <li style="border: #243444 1px solid;">Aula 01 - Introdução</li>
+                <li>Aula 02 - Dados Básicos</li>
+                <li>Aula 03 - Estrutura de Dados</li>
+                <li>Aula 04 - Lista</li>
+            </ul>
+          </section>
+          <section style="float: right;  width: 55%;  margin-right: 5%;">
+              <h2>Aula 01 - Introdução</h2>
+              <form action="" style="display: flex; flex-direction: column; gap: 10px;">
+                  <label for="descricao">Descrição</label>
+                  <input type="text" id="descricao" style="border: black 1px solid;" placeholder="Insira texto aqui...">
+                  <label for="video-aula">Anexe uma video-aula</label>
+                  <input type="file" name="" id="video-aula">
+                  <!-- criar um quizz -->
+                  <label >Aula Presencial</label>
+                  <div>
+                    <label for="presencial">Sim:</label>
+                    <input type="radio" id="presencial" name="presencial" value="presencial">
+                    <input type="date" id="data-presencial" style="float: right;">
+                  </div> 
+                  <div>
+                    <label for="nao-presencial">Não:</label>
+                    <input type="radio" id="nao-presencial" name="presencial" value="nao-presencial">
+                  </div>
+                  <div style="width: 100; display: flex; justify-content: center; gap: 50px;">
+                    <input type="submit" value="salvar" style="background-color: #243444; color: white; border-radius: 7px; padding: 2px">
+                    <button style="color: #EC0444; border: #EC0444 solid 1px; border-radius: 7px; padding: 2px;" onclick="link(event)">cancelar</button>
+                  </div>
+                  
+              </form>
+          </section>
+        </div>
+    </main>
+
+    <footer
+      class="w-screen flex justify-between text-white px-[10%] py-12 items-center"
+    >
+      <div class="w-full flex justify-between">
+        <div class="flex flex-col items-center justify-center w-full">
+          <h1 class="text-red-600 text-5xl font-bold">BIOFLIX</h1>
+          <div class="text-white text-xl pt-4">
+            <a href="#" class="hover:text-red-500 px-2"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="#" class="hover:text-red-500 px-2"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-red-500 px-2"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="w-full h-full">
+          <ul class="text-xl h-full flex flex-col gap-y-5 font-semibold">
+            <a href="./comoFunciona.html" class="hover:text-red-500 duration-150 ease-in-out"
+              ><li>Como funciona</li></a
+            >
+            <a href="./quizzes.html" class="hover:text-red-500 duration-150 ease-in-out"
+              ><li>Quizzes</li></a
+            >
+            <a href="./forum.html" class="hover:text-red-500 duration-150 ease-in-out"
+              ><li>Fórum</li></a
+            >
+          </ul>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <ul class="text-lg h-full flex flex-col gap-y-2">
+          <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Engenharia Bioprocessos e Biotecnologia</li></a
+          >
+          <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Farmácia</li></a
+          >
+          <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Ciência de Dados</li></a
+          >
+          <a href="#" class="hover:text-red-500 duration-150 ease-in-out">
+            <li>Técnico de Enfermagem</li></a
+          >
+          <a href="#" class="hover:text-red-500 duration-150 ease-in-out">
+            <li>ADS</li></a
+          >
+          <a href="#" class="hover:text-red-500 duration-150 ease-in-out">
+            <li>Geral</li></a
+          >
+        </ul>
+      </div>
+    </footer>
+    <script>
+      function link(event){
+        event.preventDefault(event);
+        window.location.href = "minhasAulas.html";
+      }
+    </script>
+  </body>
+</html>

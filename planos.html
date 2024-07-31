@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bioflix - Bem-vindo</title>
+    <style>
+      body {
+        background-image: url("https://example.com/background-image.jpg"); /* Substitua pelo link da imagem de fundo desejada */
+        background-size: cover;
+        font-family: "Sora", sans-serif;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      header {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7) 10%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+    </style>
+  </head>
+  <body class="flex flex-col bg-gray-900 w-screen overflow-x-hidden">
+    <header
+      class="w-full p-4 sticky top-0 flex justify-between items-center z-10 px-8"
+    >
+      <div class="flex items-center">
+        <a href="./index.html"
+          ><h1
+            class="text-3xl font-bold text-red-600 mr-8 hover:text-red-700 duration-150 ease-in-out"
+          >
+            BIOFLIX
+          </h1></a
+        >
+        <nav class="flex space-x-4 text-white"></nav>
+      </div>
+      <div
+        class="flex items-center space-x-4 text-white text-lg tracking-widest"
+      >
+        <a href="./comoFunciona.html" class="hover:text-red-500 duration-150 ease-in-out hidden md:block"
+          >COMO FUNCIONA</a
+        >
+        <a href="./login.html" class="hover:text-red-500 duration-150 ease-in-out  hidden md:block"
+          >ENTRAR</a
+        >
+        <a
+          href="#"
+          class="border-2 hover:text-red-600 hover:border-red-600 hover:bg-transparent duration-150 ease-in-out bg-gray-50 text-gray-900 rounded-lg px-4 py-2"
+          >VER PLANOS</a
+        >
+      </div>
+    </header>
+    <div
+      class="w-screen flex md:flex-row flex-col gap-y-16 md:gap-y-0 justify-center items-center text-white text-center py-8 pt-24 gap-x-8"
+    >
+      <div
+        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+      >
+        <h5 class="mb-4 text-4xl font-medium text-red-500 tracking-widest">
+          GRATUITO
+        </h5>
+        <div class="flex items-baseline text-gray-900">
+          <span class="text-3xl font-semibold">R$</span>
+          <span class="text-5xl font-semibold tracking-tight">0</span>
+          <span
+            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+            >/mês</span
+          >
+        </div>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Inscrições para aulas presenciais</span
+            >
+          </li>
+          
+          
+          <li class="flex line-through decoration-gray-500">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3"
+              >Acesso total aos cursos</span
+            >
+          </li>
+          <li class="flex line-through decoration-gray-500">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span class="text-base font-normal leading-tight text-gray-500 ms-3"
+              >Quizzes e tarefas</span
+            >
+          </li>
+          
+        <a href="register.html"
+          class="text-white font-semibold bg-red-600 border-2 duration-150 ease-in-out border-red-600 hover:bg-transparent hover:text-red-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        >
+          Matricule-se
+        </a>
+      </div>
+      <div
+        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+      >
+        <h5 class="mb-4 text-4xl font-medium text-red-500 tracking-widest">
+          MENSAL
+        </h5>
+        <div class="flex items-baseline text-gray-900">
+          <span class="text-3xl font-semibold">R$</span>
+          <span class="text-5xl font-semibold tracking-tight">18,99</span>
+          <span
+            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+            >/mês</span
+          >
+        </div>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Acesso total aos cursos</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Quizzes e tarefas</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Inscrições para aulas presenciais</span
+            >
+          </li>
+          
+          <a href="register.html"
+          class="text-white font-semibold bg-red-600 border-2 duration-150 ease-in-out border-red-600 hover:bg-transparent hover:text-red-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        >
+          Matricule-se
+        </a>
+      </div>
+      <div
+        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+      >
+        <h5 class="mb-4 text-4xl font-medium text-red-500 tracking-widest">
+          ANUAL
+        </h5>
+        <div class="flex items-baseline text-gray-900">
+          <span class="text-3xl font-semibold">R$</span>
+          <span class="text-5xl font-semibold tracking-tight"> 215,99</span>
+          <span
+            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+            >/ano</span
+          >
+        </div>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Acesso total aos cursos</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Quizzes e tarefas</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Inscrições para aulas presenciais</span
+            >
+          </li>
+          
+          <a href="register.html"
+          class="text-white font-semibold bg-red-600 border-2 duration-150 ease-in-out border-red-600 hover:bg-transparent hover:text-red-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        >
+          Matricule-se
+        </a>
+      </div>
+    </div>
+    <footer
+    class="w-screen flex flex-col md:flex-row justify-between text-white px-[10%] py-12 items-center "
+  >
+    <div class="w-full flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0">
+      <div class="flex flex-col items-center justify-center w-full">
+        <h1 class="text-red-600 text-5xl font-bold">BIOFLIX</h1>
+        <div class="text-white text-xl pt-4">
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-red-500 px-2"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <ul class="text-xl h-full flex flex-col gap-y-5 font-semibold text-center md:text-justify ">
+          <a
+            href="./comoFunciona.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Como funciona</li></a
+          >
+          <a
+            href="./quizzes.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Quizzes</li></a
+          >
+          <a
+            href="./forum.html"
+            class="hover:text-red-500 duration-150 ease-in-out"
+            ><li>Fórum</li></a
+          >
+        </ul>
+      </div>
+    </div>
+    <div class="w-1/2">
+      <ul class="text-lg h-full flex flex-col gap-y-2 mt-8 md:mt-0 text-center md:text-justify">
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Engenharia Bioprocessos e Biotecnologia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Farmácia</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Ciência de Dados</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Técnico de Enfermagem</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>ADS</li></a
+        >
+        <a href="#" class="hover:text-red-500 duration-150 ease-in-out"
+          ><li>Geral</li></a
+        >
+      </ul>
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Bioflix - Bem-vindo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bioflix - Bem-vindo</title>
+    <style>
+      body {
+        background-image: url("https://example.com/background-image.jpg"); /* Substitua pelo link da imagem de fundo desejada */
+        background-size: cover;
+        font-family: "Sora", sans-serif;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      header {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7) 10%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+    </style>
+  </head>
+  <body class="flex flex-col bg-gray-900 w-screen overflow-x-hidden">
+    <header
+      class="w-full p-4 sticky top-0 flex justify-between items-center z-50 px-8"
+    >
+      <div class="flex items-center">
+        <h1 class="text-3xl font-bold text-red-600 mr-8">BIOFLIX</h1>
+        <nav class="flex space-x-4 text-white"></nav>
+      </div>
+      <div
+        class="flex items-center space-x-4 text-white text-lg tracking-widest"
+      >
+        <a
+          href="./comoFunciona.html"
+          class="hover:text-red-500 duration-150 ease-in-out hidden md:block"
+          >COMO FUNCIONA</a
+        >
+        <a href="login.html" class="hover:text-red-500 duration-150 ease-in-out hidden md:block"
+          >ENTRAR</a
+        >
+        <a
+          href="./planos.html"
+          class="border-2 hover:text-red-600 hover:border-red-600 hover:bg-transparent duration-150 ease-in-out bg-gray-50 text-gray-900 rounded-lg px-4 py-2"
+          >VER PLANOS</a
+        >
+      </div>
+    </header>
+    <div class="w-screen flex flex-col md:h-[40vw]">
+      <section
+        class="w-screen md:gap-x-4 flex flex-col md:flex-row justify-between items-center  shadow-sm font-semibold text-xl mt-12"
+      >
+      <div
+    class="h-full bg-gray-50 text-gray-800 text-center hover:text-gray-900 hover:bg-gray-200 py-8 cursor-pointer ease-in-out duration-150 w-full"
+>
+     <a class="block w-full h-full my-auto">ENG.BIOP E BIOTEC</a>
+        </div>
+    <div
+      class="h-full bg-gray-50 text-gray-800 text-center hover:text-gray-900 hover:bg-gray-200 py-8 cursor-pointer ease-in-out duration-150 w-full"
+  >
+    <a class="block w-full h-full">FARMÁCIA</a>
+      </div>
+    <div
+      class="h-full bg-gray-50 text-gray-800 text-center hover:text-gray-900 hover:bg-gray-200 py-8 cursor-pointer ease-in-out duration-150 w-full"
+      > 
+      <a href="./selectedCDD.html" class="block w-full h-full">CIÊNCIAS DE DADOS</a>
+  </div>
+    <div
+       class="h-full bg-gray-50 text-gray-800 text-center hover:text-gray-900 hover:bg-gray-200 py-8 cursor-pointer ease-in-out duration-150 w-full"
+      >
+      <a class="block w-full h-full">TEC. ENFERMAGEM</a>
+</div>
+<div
+  class="h-full bg-gray-50 text-gray-800 text-center flex items-center justify-center hover:text-gray-900 hover:bg-gray-200 py-8 cursor-pointer ease-in-out duration-150 w-full"
+>
+  <a class="block w-full h-full">ADS</a>
+</div>
+<div
+  class="h-full bg-gray-50 text-gray-800 text-center hover:text-gray-900 hover:bg-gray-200 py-8 cursor-pointer ease-in-out duration-150 w-full"
+>
+  <a  class="block w-full h-full">GERAL</a>
+</div>
+
+      </section>
+      <section class="flex flex-col justify-center text-center flex-1 h-full mt-16 md:mt-0">
+        <h1 class="text-[60px] md:text-[90px] text-white mb-0 pb-0">O SEU FUTURO COMEÇA</h1>
+        <h1 class="text-[60px] md:text-[90px] text-red-600">AGORA</h1>
+      </section>
+    </div>
+    <div
+      class="w-screen flex flex-col md:flex-row  justify-center items-center text-white text-center py-8 pt-32 gap-x-8"
+    >
+      <div
+        class="w-full max-w-sm p-4 mb-12 md:mb-0 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+      >
+        <h5 class="mb-4 text-4xl font-medium text-red-500 tracking-widest">
+          MENSAL
+        </h5>
+        <div class="flex items-baseline text-gray-900">
+          <span class="text-3xl font-semibold">R$</span>
+          <span class="text-5xl font-semibold tracking-tight">18,99</span>
+          <span
+            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+            >/mês</span
+          >
+        </div>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Acesso total aos cursos</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Quizzes e tarefas</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Inscrições para aulas presenciais</span
+            >
+          </li>
+         
+          <a href="register.html"
+          class="text-white font-semibold bg-red-600 border-2 duration-150 ease-in-out border-red-600 hover:bg-transparent hover:text-red-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        >
+          Matricule-se
+        </a>
+      </div>
+      <div
+        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8"
+      >
+        <h5 class="mb-4 text-4xl font-medium text-red-500 tracking-widest">
+          ANUAL
+        </h5>
+        <div class="flex items-baseline text-gray-900">
+          <span class="text-3xl font-semibold">R$</span>
+          <span class="text-5xl font-semibold tracking-tight"> 215,99</span>
+          <span
+            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
+            >/mês</span
+          >
+        </div>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex items-center">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Acesso total aos cursos</span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Quizzes e tarefas </span
+            >
+          </li>
+          <li class="flex">
+            <svg
+              class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            <span
+              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
+              >Inscrições para aulas presenciais</span
+            >
+          </li>
+          <br>
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+              />
+            </svg>
+            
+           
+            <a href="register.html"
+          type="button"
+          class="text-white font-semibold bg-red-600 border-2 duration-150 ease-in-out border-red-600 hover:bg-transparent hover:text-red-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        >
+          Matricule-se
+          </a>
+      </div>
+    </div>
+  </body>
+</html>
