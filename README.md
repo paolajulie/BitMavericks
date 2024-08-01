@@ -1,6 +1,7 @@
 # BIOFLIX
- ## O que é o BIOFLIX? <br>
-Uma plataforma de streaming de cursos de curta e média duração que oferece uma maneira prática e acessível para clientes visualizarem e adquirirem novos conhecimentos e habilidades por meio de cursos sob demanda. A plataforma serve como estante de cursos. Desenvolvido pela equipe BitMavericks!
+Este projeto foi desenvolvido pela equipe BitMavericks no primeiro Hackathon da instituição Biopark Educação, com a duração de 24 horas.
+ ## O que é o BIOFLIX? 
+Uma plataforma de streaming de cursos de curta e média duração que oferece uma maneira prática e acessível para clientes visualizarem e adquirirem novos conhecimentos e habilidades por meio de cursos sob demanda. A plataforma serve como estante de cursos. 
 ![image](https://github.com/user-attachments/assets/427938b6-b200-4487-8a42-5fd193d7d8d0)
 ![image](https://github.com/user-attachments/assets/b44b3517-ac26-4828-ab72-cb142a1762d2)
 
